@@ -1,0 +1,251 @@
+body {
+    background: #71337d;
+}
+
+.alert-danger {
+    color: #fff;
+    background-color: #e9418f;
+    border-color: #e9418f;
+}
+
+#check-num {
+    background: #ee55a6;
+    color: #fff;
+    padding: 3px;
+    border-radius: 5px;
+    position: relative;
+    top: -6px;
+    left: -5px;
+    display: none;
+}
+
+.layui-layer-btn0 {
+    color: #ffffff !important;
+}
+
+.nicescroll-cursors {
+    background-color: #6b6582 !important;
+    width: 10px !important;
+}
+
+nav.navbar {
+    background: #4b2d73 !important;
+    box-shadow: 0 1px 0 transparent !important;
+}
+
+nav.navbar .avatar {
+    border: 0;
+}
+
+.elisyam-bg.background-03 {
+    background: url(../img_app6/im-bg.jpg) no-repeat;
+    background-size: cover;
+}
+
+.authentication-form-2 {
+    width: 100%;
+    padding: 0 45px 45px;
+}
+
+.nav-account {
+    height: 45px;
+    line-height: 45px;
+    font-size: 16px;
+    margin: 30px 0 20px;
+}
+
+.nav-account li {
+    padding-right: 15px;
+    color: #666;
+}
+
+.nav.navbar .user-size.dropdown-menu a.logout:hover {
+    background: #ee55a6;
+}
+
+.nav-account li .active {
+    color: #ee55a6;
+}
+
+.btn {
+    border-radius: 0;
+}
+
+.side-navbar .sub > span {
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+
+nav.navbar {
+    background: #4b2d73;
+    box-shadow: 0 1px 0 transparent;
+}
+
+.compact-sidebar > .side-navbar a[aria-expanded="true"] i {
+    color: #fff;
+}
+
+.compact-sidebar {
+    background: #9958b7;
+}
+
+.page-header-title, .breadcrumb a {
+    color: #fff;
+}
+
+.compact-sidebar > .side-navbar a[aria-expanded="true"] {
+    background: rgba(0, 0, 0, .1);
+}
+
+
+.compact-sidebar > .side-navbar ul a {
+    padding-bottom: 18px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.compact-sidebar > .side-navbar ul span a {
+    padding: 10px 0;
+    font-size: 12px;
+}
+
+.compact-sidebar > .side-navbar a i,
+.compact-sidebar > .side-navbar ul a:hover i {
+    margin: 5px auto;
+    color: #fff;
+}
+
+.compact-sidebar > .side-navbar a[data-toggle="collapse"]::before {
+    color: #fff;
+}
+
+@keyframes warn {
+    0% {
+        transform: scale(0);
+        opacity: 0.0;
+    }
+    25% {
+        transform: scale(0);
+        opacity: 0.35;
+    }
+    50% {
+        transform: scale(0.1);
+        opacity: 0.65;
+    }
+    75% {
+        transform: scale(0.5);
+        opacity: 0.95;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0.0;
+    }
+}
+
+.tagBox {
+    position: absolute;
+    top: 15px;
+    left: 5px;
+    width: 40px;
+    height: 40px;
+}
+
+.dot {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    left: 0px;
+    top: 0px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    z-index: 2;
+    background: #ee55a6;
+    line-height: 22px;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+}
+
+.pulse {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: -10px;
+    top: -10px;
+    border: 20px solid #ee55a6;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    z-index: 1;
+    opacity: 0;
+    -webkit-animation: warn 3s ease-out;
+    -moz-animation: warn 3s ease-out;
+    animation: warn 3s ease-out;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+.content-inner.compact {
+    background: #71337d;
+}
+
+.btn-custom01 {
+    color: #fff;
+    background-color: #ee55a6;
+}
+
+.btn-custom01 i {
+    color: #fff;
+    font-size: 1.2rem;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: .4rem
+}
+
+.btn-custom01:hover {
+    color: #fff;
+    background-color: #bc3297;
+    border-color: #bc3297;
+}
+
+.btn-custom01:focus,
+.btn-custom01.focus {
+    box-shadow: 0 0 0 2px rgba(217, 83, 79, .5)
+}
+
+.btn-custom01.disabled,
+.btn-custom01:disabled {
+    background-color: #bc3297;
+}
+
+.btn-custom01:active,
+.btn-custom01.active,
+.show > .btn-custom01.dropdown-toggle {
+    color: #fff;
+    background-color: #bc3297;
+    border-color: #bc3297;
+    background-image: none
+}
+
+.btn-gradient-01, .btn-gradient-01 a {
+    background: #ee55a6;
+    background: linear-gradient(to right, #ee55a6 0%, #bc3297 100%);
+    background-size: 200% auto;
+    font-weight: 600;
+    transition: 0.5s;
+    color: #fff;
+    border: 0 none;
+    padding: 12px 20px;
+}
+
+#preloader {
+    background-color: #c7508d;
+}
+
+.spinner {
+    border-top: solid 5px #fff;
+}

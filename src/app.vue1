@@ -1,0 +1,37 @@
+<template>
+  <div id="root">
+    <button @click="getStudent">获取学生消息</button>  
+  </div>
+
+</template>
+
+<script>
+   import axios from 'axios'
+
+   export default{
+
+     name:'App',
+
+     methods:{
+       getStudent(){
+
+          axios.get('http://localhost:5000/students').then(
+
+                response=>{
+                    console.log('获取成功：',response.data);
+                },
+                error=>{
+                  console.log('获取失败：',error.message);
+                }
+
+          )
+       }
+
+     }
+
+
+
+   }
+
+
+</script>

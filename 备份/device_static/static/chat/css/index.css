@@ -1,0 +1,288 @@
+/*
+客服工作台首页样式
+----------------------------------- */
+
+#aUChatTab{
+    position: relative;
+}
+img.emoji {
+    width:18px;
+    height:18px !important;
+    margin-right:4px !important;
+}
+.all_sp_noReadCount{
+    display: inline-block;
+    position: absolute;
+    height: 15px;
+    line-height: 15px;
+    padding: 0 4px;
+    font-size: 12px;
+    background: #e50111;
+    color: #fff;
+    font-family: Arial;
+    border-radius: 20px;
+}
+#ulLove>li>div{
+    float: left;
+}
+#ulLove>li>.txt-box{
+    margin-left: 15px;
+}
+#tab-4 .b1{
+    padding-bottom: 5px;
+    border-bottom:1px solid #ddd;
+}
+#love_tt_list>.love_group_li{
+    color: #43b792;
+    border-color: #43b792 !important;
+    padding: 1px 25px 1px 10px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    user-select: none;
+    border: 1px solid transparent;
+    float: left;
+    position: relative;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+#love_tt_list>.love_group_li .TT_close{
+    color:white;
+    background: #43b792;
+    position: absolute;
+    right: 0;
+    width: 16px;
+    height: 22px;
+    top:-1px;
+    border-radius: 3px;
+    line-height: 22px   ;
+}
+
+.img-control {
+    width: 34px;
+    height: 34px;
+}
+
+#firendList{
+    max-height: 400px;
+    overflow-y: auto;
+    margin-top: 15px;
+}
+
+#firendList .weui-cells{
+    margin-top: 0;
+}
+
+#audio{position: absolute;left: 0;top: 0;z-index: 1;opacity: 0;}
+#delCache:hover{
+    background-color: #3BBE0E;
+}
+.spanOver {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.ztree>li>ul>li>a>span,.ztree>li>ul>li>ul>li>a>span,.ztree>li>a>span{
+    background-size: 100% !important;
+}
+.dropdown-menu-pop{
+    position: fixed;
+    display: block;
+}
+.dropdown-menu-pop .dropdown-item{
+    display: block;
+    width: 100%;
+    padding: .1rem .5rem;
+    clear: both;
+    font-weight: 400;
+    color: #e76c90;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: white;
+    border: 0;
+    transition: all 0.25s;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px #acacac;
+}
+.dropdown-menu-pop .dropdown-item:hover{
+    background-color: #f0f2f7;
+}
+.red-btn{
+    color:#e76c90;
+    cursor:pointer;
+    margin-left:5px;
+}
+.account-info{
+    width: 380px;
+}
+.account-info-ul .dis-tb .red-btn{
+    position: absolute;
+    right: 15px;
+}
+
+#modal-upimg .cropper-container{
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+}
+#modal-upimg div.img img{
+    max-width: 100%;
+}
+.mb-2, .my-2 {
+    margin-bottom: .5rem!important;
+}
+.mtb-5{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.add-new-reply{
+    padding: 0 !important;
+}
+.u-chat .u-right .part-2 .reply-list>li{
+    padding: 5px !important;
+    margin: 5px !important;
+}
+.green{
+    cursor:pointer;
+}
+.upsty{
+    width: 3rem;
+    height: 3rem;
+}
+.input-group .linkImgUp:before, .upsty:before {
+    content: "+";
+    display: block;
+    width: 3rem;
+    height: 3rem;
+    text-indent: 0rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 1rem;
+    line-height: 3rem;
+}
+.input-group .linkImgUp:after, .upsty:after {
+    content: "";
+    display: block;
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    border-radius: 5px;
+    border: 1px solid rgba(255,255,255,.1);
+}
+.new-friend-info{
+    width: 350px;
+}
+.new-friend-info .nickname{
+    font-weight: 600;
+}
+.new-friend-info .img-control{
+    width: 55px;
+    height: 55px;
+    margin-right: 10px;
+}
+.newInfo{
+    position: relative;
+}
+.newInfo>i{
+    display: none;
+    position: absolute;
+    right: 0.1rem;
+    top: 0.2rem;
+    color: #fff;
+    background-color: #e76c90;
+    font-size: .6rem;
+    line-height: .6rem;
+    border-radius: 50%;
+    padding: .2rem;
+}
+.newInfo.active>i{
+    display: none !important;
+}
+.consentAll{
+    width: 100%;
+}
+.glyphicon-remove:before {
+    font-size: 1rem;
+}
+.glyphicon-remove {
+    top: -.1rem;
+}
+.audioDiv {
+    height: 30px !important;
+    border-radius: 2.5rem;
+    min-width: 15%;
+    max-width: 70%;
+    cursor: pointer;
+    position: relative;
+}
+.alert-primary {
+    color: #fff;
+    /*background-color: #61c366;*/
+    background-color: #95ec69;
+    border-color: #61c366;
+}
+.audioDiv .length {
+    font-size: 12px;
+    line-height: 30px;
+    /*float: right;*/
+    margin-right: 10px;
+    max-width: 80%;
+    min-width: 20%;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    display: block;
+}
+.audioIcon{
+    width: 20px;
+    line-height: 30px;
+    float: left;
+    margin-left: 10px;
+}
+#reply_tag{
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+    font-size: 12px;
+    height: 35px;
+}
+.reply-op-audio{
+    line-height: 30px;
+}
+.time_text{
+    padding-left: 5px;
+    font-size: 12px;
+    color: #929292;
+    line-height: 30px;
+}
+.modal .table tbody td {
+    padding: 5px !important;
+}
+
+/* ztree */
+.ztree li {
+    line-height: 20px;
+}
+
+.ztree li a {
+    height: 20px !important;
+}
+
+.ztree li span.button {
+    width: 18px;
+    height: 18px;
+}
+
+.ztree li span {
+    line-height: 18px;
+}

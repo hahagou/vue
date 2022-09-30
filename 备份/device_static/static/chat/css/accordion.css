@@ -1,0 +1,177 @@
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	background: #2d2c41;
+	font-family: 'Open Sans', Arial, Helvetica, Sans-serif, Verdana, Tahoma;
+}
+
+ul {
+	list-style-type: none;
+}
+
+a {
+	color: #e76c90;
+	text-decoration: none;
+}
+
+/** =======================
+ * Contenedor Principal
+ ===========================*/
+h1 {
+ 	color: #FFF;
+ 	font-size: 24px;
+ 	font-weight: 400;
+ 	text-align: center;
+ 	margin-top: 80px;
+ }
+
+h1 a {
+ 	color: #c12c42;
+ 	font-size: 16px;
+ }
+
+ .accordion {
+ 	width: 100%;
+ 	max-width: 360px;
+ 	margin: auto;
+ 	background: #FFF;
+ 	-webkit-border-radius: 4px;
+ 	-moz-border-radius: 4px;
+ 	border-radius: 4px;
+ }
+
+.accordion .link {
+	cursor: pointer;
+	display: block;
+	padding: 15px 15px 15px 42px;
+	color: #73879c;
+	font-size: .6rem;
+	font-weight: 500;
+	border-bottom: 1px solid #CCC;
+	position: relative;
+	-webkit-transition: all 0.4s ease;
+	-o-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+}
+
+.accordion li:last-child .link {
+	border-bottom: 0;
+}
+
+.accordion li i {
+	position: absolute;
+	top: 16px;
+	left: 12px;
+	font-size: 18px;
+	-webkit-transition: all 0.4s ease;
+	-o-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+}
+
+.accordion li i.fa-chevron-down {
+	right: 12px;
+	left: auto;
+	font-size: 16px;
+}
+
+.accordion li.open .link {
+	color: #e76c90;
+}
+
+.accordion li.open i {
+	color: #e76c90;
+}
+.accordion li.open i.fa-chevron-down {
+	-webkit-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+
+/**
+ * Submenu
+ -----------------------------*/
+ .submenu {
+ 	display: none;
+ 	background: #444359;
+ 	font-size: 14px;
+ }
+
+ .submenu li {
+ 	border-bottom: 1px solid #2c304d;
+ }
+
+ .submenu a {
+ 	display: block;
+ 	text-decoration: none;
+ 	color: #d9d9d9;
+ 	padding: 12px;
+ 	padding-left: 42px;
+ 	-webkit-transition: all 0.25s ease;
+ 	-o-transition: all 0.25s ease;
+ 	transition: all 0.25s ease;
+ }
+
+ .submenu a:hover {
+ 	background: #e76c90;
+ 	color: #FFF;
+ }
+
+
+.accordion .submenu {
+	position: relative;
+}
+.accordion .submenu .head-img {
+	position: absolute;
+	width: auto;
+	height: auto;
+	max-width: 1.6rem;
+	border-radius: 5px;
+	margin-left: 3px;
+	top: 5px;
+	z-index: 50;
+}
+.accordion .submenu a {
+	cursor: pointer;
+	position: relative;
+}
+
+.accordion .submenu a .nickname {
+	margin-left: 10px;
+	display: inline-block;
+	width: 95px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.accordion .btn-box{
+	position: absolute;
+	right: 5px;
+}
+.accordion .btn-box botton{
+	padding: 5px;
+	font-weight: 600;
+	transition: .25s all;
+}
+.accordion .btn-box botton:hover{
+	color: #2c304d;
+}
+.accordion li{
+	position: relative;
+}
+
+#friend-request-info .request_remark{
+	width: 100%;
+	max-height: 100px;
+	overflow-y: auto;
+	min-height: 35px;
+	margin: 5px 0;
+	color: #607D8B;
+}

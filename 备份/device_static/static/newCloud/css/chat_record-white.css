@@ -1,0 +1,139 @@
+/*2019/05/14 聊天记录*/
+.friends li{white-space:nowrap;overflow: hidden;font-size: 12px;}
+.friends li img{width: 25px;height: 25px;border-radius: 50%;margin-right: 5px;}
+.chat-list{width:50%;background:#fff;max-height:700px;padding: 10px;border-radius: 10px;}
+.chat-list #servicersTree{color: #333;}
+.wx-list{margin-left:5px;display: none;}
+.wx-list .friends{min-height:660px;}
+.wx-list .friends li{padding: 3px;}
+.wx-list .friends li:hover{background: #252946;color: #e76c90;}
+.wx-list .friends li.active{background: #252946;color: #e76c90;}
+#servicersTree{overflow-y: scroll;max-height:660px;}
+#servicersTree::-webkit-scrollbar{width:4px;height:4px;}
+#servicersTree::-webkit-scrollbar-track{background:#98a8b4;border-radius:2px;}
+#servicersTree::-webkit-scrollbar-thumb{background: #414669;border-radius:2px;}
+#servicersTree::-webkit-scrollbar-thumb:hover{background: #747474;}
+
+.chat-content{background:#fff;border-radius: 10px;}
+.chat-content h5{padding-top: 10px;font-size: 14px;}
+.chat-content h5 span{padding: 0px 5px 0px 5px;font-size: 12px;}
+.chat-content #chat-box{padding: 5px;min-height:585px;}
+.chat-content .chat-info{font-size: 12px; margin-bottom: 2px;}
+.chat-sender{clear:both;font-size: 12px;margin-bottom: 10px;}
+.chat-sender .avatar{float:left;}
+.chat-sender div:nth-of-type(2){margin: 0 50px 5px 50px;color:#636363;text-align: left;}
+.chat-sender .cont{background-color:white;margin: 0 0px 0px 10px;padding:2px 10px;border-radius:7px;min-width: 80px;display: inline-block;}
+.chat-receiver{clear:both;font-size: 12px;margin-bottom: 15px;overflow: hidden}
+.chat-receiver .avatar{float: right;}
+.chat-receiver div:nth-of-type(2){margin-left:50px;padding-top:5px;color:#636363;text-align:right;}
+.chat-receiver .cont{background-color:#b2e281;margin: 0 10px 0px 0px;padding:8px 10px;border-radius:7px;display: inline-block;float:right;position: relative}
+.chat-sender .cont span{color:#333;position:relative;top:-5px;}
+.chat-content .cont{max-width:50%;width:auto;}
+.chat-receiver .cont span{color:#333;}
+.chat-sender .cont img{position:relative;top:-5px;}
+.chat-receiver .cont img{position:relative;top:0px;}
+.chat-content .avatar img{width: 40px;height: 40px;border: 1px solid;}
+.chat-left_triangle{height: 0px;width: 0px;border-width: 6px;border-style: solid;border-color: transparent white transparent transparent;position: relative;left:-22px;top:5px;}
+.chat-right_triangle{height: 0px;width: 0px;border-width: 6px;border-style: solid;border-color: transparent transparent transparent #b2e281;position: absolute;right:-12px;top:5px;}
+.chat-left_triangle .chat-right_triangle img{padding-right: 5px !important;}
+.addInfo{background:#6164734f;font-size:12px;margin:0 auto;padding:5px;border-radius:10px;width:25%;text-align:center;}
+.chat-search{background:#fff;border-radius: 10px;overflow: hidden;padding: 10px;border:1px solid #252946;}
+.chat-search .search-title{margin-bottom:15px;font-size:14px;}
+.chat-search .input-box{font-size:12px;width:19%;display: inline-block;}
+.chat-search .input-box p{margin-top: 5px;}
+.chat-search .input-box:first-child p{display: flex;}
+.chat-search .input-box:first-child p>input{width: 40%;}
+.chat-search .input-box p>input{background: #2c304d;font-size: 1rem;line-height: 1.25;color: #aea9c3;border: 1px solid rgba(255,255,255,.1);border-radius: 4px;width:90%;font-size:10px;height:26px;padding-left: 10px;}
+.chat-search .btn-box{margin: 20px 0px;float: right;}
+.chat-search .btn-box button{padding: 5px 10px;}
+.chat-search .centrality{line-height:26px;margin: 0px 5px 0px 3px;}
+
+.clearscroll::-webkit-scrollbar{width:4px;height:4px;}
+.clearscroll::-webkit-scrollbar-track{background: #2c304d;border-radius:2px;}
+.clearscroll::-webkit-scrollbar-thumb{background: #414669;border-radius:2px;}
+.clearscroll::-webkit-scrollbar-thumb:hover{background: #747474;}
+
+.ztree>li>ul>li>a>span,.ztree>li>ul>li>ul>li>a>span,.ztree>li>a>span{background-size: 100% !important;}
+.ztree li a.curSelectedNode{height: 18px;}
+
+/*好友里列表>查看聊天>弹出层>*/
+#modal-chat .widget-body .basic-scroll{min-height: 300px;max-height: 500px;overflow-y: scroll;}
+#modal-chat .widget-body .basic-scroll::-webkit-scrollbar{width:4px;height:4px;}
+#modal-chat .widget-body .basic-scroll::-webkit-scrollbar-track{background: #e4dcdc;border-radius:2px;}
+#modal-chat .widget-body .basic-scroll::-webkit-scrollbar-thumb{background: #d2c6c6;border-radius:2px;}
+#modal-chat .widget-body .basic-scroll::-webkit-scrollbar-thumb:hover{background: #5d5386;}
+#modal-chat .widget-body .basic-scroll .chat-left img{margin: 0px 15px 0px -30px;}
+#modal-chat .widget-body .message-card .card-body img{margin: 0;}
+#modal-chat .widget-body .card-body{padding: 10px !important;}
+#modal-chat .widget-body .message-card{min-width:50px;max-width:80%;font-size: 14px;}
+#modal-chat .widget-body {padding: 5px !important;}
+#modal-chat #chat-cont{padding-right:0px;}
+
+@media (min-width: 576px) {
+    #wxAccount-modal .modal-dialog{max-width:30% !important;margin:0rem auto;}
+}
+#wxAccount-modal .service_chat_info{min-height:50px;max-height:250px;overflow-y: scroll;}
+#wxAccount-modal .service_chat_info::-webkit-scrollbar{width:4px;height:4px;}
+#wxAccount-modal .service_chat_info::-webkit-scrollbar-track{background: #ffffff;border-radius:2px;}
+#wxAccount-modal .service_chat_info::-webkit-scrollbar-thumb{background: #dcdcdc;border-radius:2px;}
+#wxAccount-modal .service_chat_info::-webkit-scrollbar-thumb:hover{background: #d2c6c6;}
+#wxAccount-modal .basic-scroll{max-height:350px;overflow-y: scroll !important;}
+#wxAccount-modal .basic-scroll::-webkit-scrollbar{width:4px;height:4px;}
+#wxAccount-modal .basic-scroll::-webkit-scrollbar-track{background: #5d5386;border-radius:2px;}
+#wxAccount-modal .basic-scroll::-webkit-scrollbar-thumb{background: #8275b5;border-radius:2px;}
+#wxAccount-modal .basic-scroll::-webkit-scrollbar-thumb:hover{background: #6e4e7d;}
+#wxAccount-modal .container-fluid {padding:0px;}
+#wxAccount-modal .chat .card-body{padding: 10px !important;}
+#wxAccount-modal .sender-background{background:#5d5386;}
+#wxAccount-modal .sender-background:before{border-right-color:#5d5386;}
+#wxAccount-modal .receiver-background{background:#5cb85c;margin-right: 10px;}
+#wxAccount-modal .receiver-background:before{border-left-color:#5cb85c;}
+#wxAccount-modal .message-card{max-width: 80%;min-width: 50px;margin-left: 10px;}
+#wxAccount-modal .avatar-bubble{margin-left: 0;}
+#wxAccount-modal .widget-body{padding: 0;font-size: 12px;}
+
+/*用户消息列表*/
+#messages-body ul li{
+    border-bottom: 1px solid #494556;
+    padding: 15px;
+    font-size: 12px;
+    color: #909090;
+    overflow: hidden;
+    min-height: 100px;
+    margin: 0px 0px 10px 0px;
+}
+#messages-body ul li.new{
+    background: #3b405d;
+    border-radius: 5px;
+}
+#messages-body ul li .hide-cont .title span{
+    font-size: 14px;
+}
+#messages-body ul li .hide-cont .title small.title{
+    color: #6f738e;
+}
+#messages-body ul li .hide-cont {
+    color: #444b7d;
+}
+#messages-body ul li .hide-cont .title small.time{
+    color: #6f738e;
+    float: right;
+}
+#messages-body ul li .hide-cont{
+    color: #808392;
+}
+#messages-body ul li .hide-p{
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    margin: 0;
+    font-size: 12px;
+}
+#messages-body ul li button{
+    padding: 5px !important;
+    font-size: 12px;
+}
+#messages-body ul li .unfold{
+    line-height: 30px;
+    margin: 0px 15px 0px 0px;
+}

@@ -1,0 +1,105 @@
+.elisyam-bg.background-03 {
+    background: url(../img_app1/im-bg.jpg) no-repeat;
+    background-size: cover;
+}
+
+.authentication-form-2 {
+    width: 100%;
+    padding: 0 45px 45px;
+}
+
+.nav-account {
+    height: 45px;
+    line-height: 45px;
+    font-size: 16px;
+    margin: 30px 0 20px;
+}
+
+.nav-account li {
+    padding-right: 15px;
+    color: #666;
+}
+
+.nav-account li .active {
+    color: #e23f83;
+}
+
+.btn {
+    border-radius: 0;
+}
+
+.side-navbar .sub > span {
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+
+.compact-sidebar {
+    background: #2879FF;
+}
+
+.compact-sidebar > .side-navbar a[aria-expanded="true"] {
+    background: rgba(0, 0, 0, .1);
+}
+
+
+.compact-sidebar > .side-navbar ul a {
+    padding-bottom: 18px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.compact-sidebar > .side-navbar ul span a {
+    padding: 10px 0;
+    font-size: 12px;
+}
+
+.compact-sidebar > .side-navbar a i,
+.compact-sidebar > .side-navbar ul a:hover i {
+    margin: 5px auto;
+    color: #fff;
+}
+
+.compact-sidebar > .side-navbar a[data-toggle="collapse"]::before {
+    color: #fff;
+}
+
+.btn-custom01 {
+    color: #fff;
+    background-color: #2879FF;
+}
+
+.btn-custom01 i {
+    color: #fff;
+    font-size: 1.2rem;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: .4rem
+}
+
+.btn-custom01:hover {
+    color: #fff;
+    background-color: #0164a5;
+    border-color: #0164a5;
+}
+
+.btn-custom01:focus,
+.btn-custom01.focus {
+    box-shadow: 0 0 0 2px rgba(217, 83, 79, .5)
+}
+
+.btn-custom01.disabled,
+.btn-custom01:disabled {
+    background-color: #2879FF
+}
+
+.btn-custom01:active,
+.btn-custom01.active,
+.show > .btn-custom01.dropdown-toggle {
+    color: #fff;
+    background-color: #0164a5;
+    border-color: #0164a5;
+    background-image: none
+}
+

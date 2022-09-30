@@ -1,0 +1,26 @@
+.page-header.navbar .page-logo .logo-default {
+    font-size: 16px;
+    color: #fff !important;
+    margin-top: 25px;
+    letter-spacing: 2px;
+}
+
+.page-header-fixed .page-container {
+    margin-top: 0;
+}
+
+.page-sidebar-menu {
+}
+
+.portlet {
+    margin-bottom: 0;
+}
+
+.textarea-control {
+    resize: none;
+}
+
+.main-color {
+    color: #4276a4;
+}
+

@@ -1,0 +1,88 @@
+/*css覆盖样式*/
+p {
+    margin-bottom: .5rem;
+}
+
+.alert-primary {
+    color: #004085;
+    background-color: #cce5ff;
+    border-color: #b8daff;
+}
+
+.alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+/*.table {*/
+    /*background-color: #fff;*/
+/*}*/
+
+.table thead th {
+    padding: .85rem;
+}
+
+.page-item:first-child .page-link,
+.page-item:last-child .page-link,
+.page-link {
+    border: 1px solid;
+    border-radius: 4px;
+}
+
+/*css新增样式*/
+.btn-radius {
+    border-radius: 6px;
+}
+
+.btn-radius-0 {
+    border-radius: 0;
+}
+
+.margin-0 {
+    margin: 0;
+}
+
+.search {
+    width: 400px;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.iconNumber {
+    font-style: normal;
+    margin-left: .75rem;
+    width: 2rem;
+    height: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    border: .05rem solid #ccc;
+    background-color: #ccc;
+    color: #fff;
+}
+
+.controlColor {
+    color: #007bff;
+}
+
+.contentList .item:hover {
+    cursor: move;
+}
+
+.contentList .info {
+    margin-bottom: .5rem;
+}
+
+.contentList .infoRole {
+    width: 5rem;
+    display: inline-block;
+}
+
+.contentList .infoTime {
+    width: 14rem;
+    display: inline-block;
+}
+
+.layui-layer-btn .layui-layer-btn0 {
+    color: #fff!important;
+}

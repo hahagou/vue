@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+/*chat-page*/
+.u-main .u-left{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 200px;
+    border-right: solid 1px #ccc;
+}
+.u-main .u-left .menu>a{
+    display: block;
+    padding: 0 15px;
+    height: 47px;
+    line-height: 47px;
+    color: #2a3f54;
+    font-size: 16px;
+    border-bottom: solid 1px #f1f1f1;
+}
+.u-main .u-left .menu>a .fa{
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+}
+.u-main .u-left .menu>a.active{
+    background-color: #f0f2f7;
+}
+.u-main .u-right{
+    position: absolute;
+    top: 0;
+    left: 200px;
+    width: -webkit-calc(100% - 200px);
+    width: -moz-calc(100% - 200px);
+    width: calc(100% - 200px);
+    height: 100%;
+}

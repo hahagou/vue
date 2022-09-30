@@ -1,0 +1,265 @@
+.logBox{
+    background: #2c304d;
+    border-radius: 4px;
+    max-height: 800px;
+    overflow-y: scroll;
+}
+.logBox::-webkit-scrollbar {
+    width: 4px;
+}
+
+.logBox::-webkit-scrollbar-track {
+    background-color:#4e4671;
+    -webkit-border-radius: 2em;
+    -moz-border-radius: 2em;
+    border-radius:2em;
+}
+
+.logBox::-webkit-scrollbar-thumb {
+    background-color:#7e779e;
+    -webkit-border-radius: 2em;
+    -moz-border-radius: 2em;
+    border-radius:2em;
+}
+
+.VivaTimeline{
+    padding: 10px 0px 10px 0px;
+}
+
+.VivaTimeline dl {
+    position: relative;
+    top: 0;
+    padding: 20px 200px;
+    margin: 0
+}
+
+.VivaTimeline dl:before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    z-index: 100;
+    width: 2px;
+    margin-left: -1px;
+    content: '';
+    background-color: #52556b;
+}
+
+.VivaTimeline dl dt {
+    font-size: 12px;
+    position: relative;
+    top: 30px;
+    z-index: 200;
+    width: 90px;
+    padding: 3px 5px;
+    margin: 0 auto 30px;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    background-color: #4c5175;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px
+}
+
+.VivaTimeline dl dd {
+    position: relative;
+    z-index: 200
+}
+
+.VivaTimeline dl dd .circ {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    z-index: 200;
+    width: 18px;
+    height: 18px;
+    margin-left: -9px;
+    background-color: #69cd00;
+    border: 4px solid #f5f7fa;
+    border-radius: 50%;
+    -webkit-border-radius: 50% !important;
+    -moz-border-radius: 50% !important
+}
+
+.VivaTimeline dl dd .time {
+    position: absolute;
+    top: 27px;
+    left: 50%;
+    display: inline-block;
+    width: 100px;
+    padding: 10px 20px;
+    color: #4fc1e9
+}
+
+.VivaTimeline dl dd .events {
+    position: relative;
+    width: 47%;
+    padding: 10px 0 0;
+    margin-top: 31px;
+    background-color: #4e4671;
+    border-radius: 4px;
+    -webkit-border-radius: 4px !important;
+    -moz-border-radius: 4px !important
+}
+
+.VivaTimeline dl dd .events:before {
+    position: absolute;
+    top: 12px;
+    width: 0;
+    height: 0;
+    content: '';
+    border-style: solid;
+    border-width: 6px
+}
+
+.VivaTimeline dl dd .events .events-object {
+    margin: 0 auto;
+}
+
+.VivaTimeline dl dd .events .events-header {
+    min-height: 30px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #EEE;
+}
+
+.VivaTimeline dl dd .events .events-body {
+    overflow: hidden;
+    zoom: 1;
+    background-color: #c3bedc;
+    padding: 15px;
+}
+.VivaTimeline dl dd .events .events-body pre{
+    word-wrap: break-word;
+    white-space: pre-line;
+    color: #4c5175;
+    font-size: 14px;
+    font-family: "Microsoft YaHei";
+}
+.VivaTimeline dl dd .events .events-body .row{
+    display:none;  
+}
+
+.VivaTimeline dl dd .events .events-body .events-desc {
+    text-indent: 2em;
+    padding: 0 15px;
+}
+
+.VivaTimeline dl dd .events .events-footer {
+    text-align:center;
+    font-size: 12px;
+    padding: 5px;
+}
+.VivaTimeline dl dd .events .events-footer ol {
+    list-style: none; 
+    margin: 0 auto; 
+    padding: 0;
+}
+.VivaTimeline dl dd .events .events-footer ol li {
+    background: #32b487; 
+    border-radius: 5px; 
+    margin: 10px; 
+    display: inline-block; 
+    width: 10px; 
+    height: 10px;
+    cursor: pointer;
+}
+.VivaTimeline dl dd .events .events-footer ol .active{
+    transform: scale(2);
+}
+
+.VivaTimeline dl dd.pos-right .time {
+    margin-left: -100px;
+    text-align: right
+}
+
+.VivaTimeline dl dd.pos-right .events {
+    float: right
+}
+
+.VivaTimeline dl dd.pos-right .events:before {
+    left: -12px;
+    border-color: transparent #4e4671 transparent transparent
+}
+
+.VivaTimeline dl dd.pos-left .time {
+    margin-left: 0;
+    text-align: left
+}
+
+.VivaTimeline dl dd.pos-left .events {
+    float: left
+}
+
+.VivaTimeline dl dd.pos-left .events:before {
+    right: -12px;
+    border-color: transparent transparent transparent #4e4671;
+}
+
+.VivaTimeline .carousel-indicators{
+    bottom: 0;
+}
+
+@media screen and (max-width: 767px) {
+    .VivaTimeline dl:before {
+        left: 90px
+    }
+    .VivaTimeline dl dt {
+        margin: 0 30px 30px
+    }
+    .VivaTimeline dl dd .circ {
+        left: 90px
+    }
+    .VivaTimeline dl dd .time {
+        left: 20px
+    }
+    .VivaTimeline dl dd.pos-left .time {
+        padding: 10px 0;
+        margin-left: 0;
+        text-align: left
+    }
+    .VivaTimeline dl dd.pos-left .events {
+        float: right;
+        width: 73%;
+        margin-right: 4%;
+    }
+    .VivaTimeline dl dd.pos-left .events:before {
+        left: -12px;
+        border-color: transparent #CCC transparent transparent
+    }
+    .VivaTimeline dl dd.pos-right .time {
+        padding: 10px 0;
+        margin-left: 0;
+        text-align: left
+    }
+    .VivaTimeline dl dd.pos-right .events {
+        float: right;
+        width: 73%;
+        margin-right: 4%;
+    }
+    /*
+    .VivaTimeline dl dd .events .events-body {
+        display: none;
+    }
+    .VivaTimeline dl dd .events .events-footer {
+        display: none;
+    }
+    */
+}
+
+@media screen and (max-width: 500px) {
+    .VivaTimeline dl dd.pos-left .events {
+        float: right;
+        width: 63%;
+        margin-right: 4%;
+    }
+    .VivaTimeline dl dd.pos-right .events {
+        float: right;
+        width: 63%;
+        margin-right: 4%;
+    }
+}

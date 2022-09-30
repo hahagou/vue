@@ -1,0 +1,121 @@
+/******自定义全局公共样式******/
+/*列表选择统计*/
+.check_num {
+    position: relative;
+}
+.check_num .styled-checkbox {
+    padding-left:25px;
+    margin-left:4px;
+}
+#check-num {
+    background: #5cb85c;
+    color: #fff;
+    padding: 3px;
+    border-radius: 5px;
+    position: absolute;
+    top: -3px;
+    left: 22px;
+    display: none;
+}
+/*layui提示框按钮样式*/
+.layui-layer-btn0 {
+    color: #ffffff !important;
+}
+/*滚动条样式*/
+.nicescroll-cursors {
+    background-color: #6b6582 !important;
+}
+
+.store {
+    display: none;
+}
+
+/* 消息数动效 */
+@keyframes warn {
+    0% {
+        transform: scale(0);
+        opacity: 0.0;
+    }
+    25% {
+        transform: scale(0);
+        opacity: 0.35;
+    }
+    50% {
+        transform: scale(0.1);
+        opacity: 0.65;
+    }
+    75% {
+        transform: scale(0.5);
+        opacity: 0.95;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0.0;
+    }
+}
+
+.tagBox {
+    position: absolute;
+    top: 15px;
+    left: 5px;
+    width: 40px;
+    height: 40px;
+}
+
+.dot {
+    position: absolute;
+    width: auto;
+    min-width: 22px;
+    height: 22px;
+    left: 0px;
+    top: 0px;
+    -webkit-border-radius: 11px;
+    -moz-border-radius: 11px;
+    border-radius: 11px;
+    z-index: 2;
+    background: #2879FF;
+    line-height: 22px;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+}
+
+.pulse {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: -10px;
+    top: -10px;
+    border: 20px solid #2879FF;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    z-index: 1;
+    opacity: 0;
+    -webkit-animation: warn 3s ease-out;
+    -moz-animation: warn 3s ease-out;
+    animation: warn 3s ease-out;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+.table-responsive {
+    /*overflow-x: unset !important;*/
+}
+
+/* 二维码上传预览图样式 */
+#qr-preview img {
+    max-height: 5rem;
+    max-width: 5rem;
+    float: left;
+    margin: 10px 10px 0 0;
+}
+
+#qr-result {
+    margin-top: 10px;
+}
+
+#qr-result p {
+    line-height: 18px;
+}

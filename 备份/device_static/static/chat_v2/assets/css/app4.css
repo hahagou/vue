@@ -1,0 +1,25 @@
+body, .table {
+    color: #5a4da5 !important;
+}
+
+.bg-primary {
+    background-color: #433873 !important;
+}
+
+.btn-primary {
+    background-color: #433873 !important;
+    border-color: #433873 !important;
+}
+
+.contacts-list .contacts-item.active .contacts-link {
+    background: #433873 !important;
+    border: 1px solid #433873 !important;
+}
+
+.message.self .message-content {
+    background-color: #433873 !important;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+    background-color: #433873 !important;
+}

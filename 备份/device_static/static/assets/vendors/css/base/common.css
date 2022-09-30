@@ -1,0 +1,62 @@
+.table-scroll-box{
+    position: relative;
+}
+.scroll-box-go-top {
+    background: #fff;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #2c304d;
+    bottom: 4.5rem;
+    right: -1rem;
+    text-decoration: none;
+    font-size: 16px;
+    text-align: center;
+    line-height: 40px;
+    display: none;
+    box-shadow: 0 1px 15px 1px rgba(52, 40, 104, 0.15);
+    z-index: 10000;
+}
+
+.scroll-box-go-top:link,.scroll-box-go-top:visited,.scroll-box-go-bottom:link,.scroll-box-go-bottom:visited,.go-bottom:link,.go-bottom:visited{
+    color: #2c304d;
+}
+.scroll-box-go-bottom{
+    background: #fff;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #2c304d;
+    bottom: 1rem;
+    right: -1rem;
+    text-decoration: none;
+    font-size: 16px;
+    text-align: center;
+    line-height: 40px;
+    display: none;
+    box-shadow: 0 1px 15px 1px rgba(52, 40, 104, 0.15);
+    z-index: 10000;
+}
+.go-top {
+    bottom: 4.5rem;
+}
+.go-bottom {
+    background: #fff;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #2c304d;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    text-decoration: none;
+    font-size: 16px;
+    text-align: center;
+    line-height: 40px;
+    display: none;
+    box-shadow: 0 1px 15px 1px rgba(52, 40, 104, 0.15);
+    z-index: 10000;
+}

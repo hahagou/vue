@@ -1,0 +1,503 @@
+input,select,textarea {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit
+}
+#main{
+    max-height: 600px;
+    overflow-y: scroll;
+}
+legend {
+    color: #000
+}
+
+a {
+    text-decoration: none
+}
+
+input {
+    -webkit-appearance: none
+}
+
+* {
+    -webkit-tap-highlight-color: transparent
+}
+
+html {
+    background-color: #f8f8f8;
+    font-family: Arial,sans-serif;
+    font-size: 13px
+}
+
+@media screen and (min-width:350px) {
+    html {
+        font-size: 15px
+    }
+
+    .cmt-wrap {
+        font-size: 14px
+    }
+
+    .time {
+        font-size: 13px
+    }
+}
+
+.hide {
+    display: none
+}
+
+header {
+    position: relative
+}
+
+#avt,#user-name {
+    position: absolute
+}
+
+#bg {
+    width: 100%
+}
+
+#user-name {
+    text-align: right;
+    right: 114px;
+    bottom: 15px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 15px;
+    text-shadow: 0 1px .5px #000
+}
+
+#share a,.btn {
+    font-size: 14px
+}
+
+.btn,b {
+    font-weight: 400
+}
+
+#share a,#share p,.btn {
+    text-align: center
+}
+
+#avt {
+    width: 74px;
+    height: 74px;
+    border: 1px solid #dbdbdb;
+    right: 15px;
+    bottom: -22px;
+    padding: 1px;
+    background-color: #fff
+}
+
+#list li,.po-hd {
+    position: relative
+}
+.po-hd .foot{
+    overflow: hidden;
+    position: relative;
+    padding: 5px 0 6px;
+    /* display:-webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between */
+}
+.po-hd .foot .right{
+    float: right;
+    overflow: hidden;
+}
+
+#list {
+    padding: 30px 0 10px
+}
+
+#list li {
+    line-height: 1.5;
+    border-bottom: 1px solid #e2e2e2;
+    margin-top: 15px;
+    padding-bottom: 15px
+}
+
+#share a:nth-child(2),.ads,.po-avt {
+    position: absolute
+}
+
+.ads {
+    color: #999;
+    right: 5px;
+    top: 0
+}
+
+.ads img {
+    width: 10px;
+    padding-left: 8px
+}
+
+.ad-link {
+    color: #3b5384
+}
+
+.post .ad-link img {
+    width: 11px;
+    padding: 0;
+    display: inline-block
+}
+
+.po-avt-wrap {
+    padding-left: 10px
+}
+
+.po-avt {
+    width: 40px;
+    height: 40px;
+    top: 0;
+    left: 10px
+}
+
+.r {
+    border-bottom: 8px solid #eee;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    width: 1px;
+    margin-top: 5px;
+    margin-left: 10px
+}
+
+.po-cmt {
+    padding-left: 60px;
+    padding-right: 10px;
+    width: 100%;
+    box-sizing: border-box
+}
+
+.po-name {
+    color: #576b95
+}
+
+.post {
+    color: #252525;
+    padding-bottom: 10px
+}
+
+#share a,.btn {
+    display: inline-block
+}
+
+.imglist{
+    font-size: 0;
+    display:-webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items:stretch;
+    flex-wrap:wrap
+}
+.post p a,
+.imglist a{
+    width: 33.33%;
+    box-sizing: border-box;
+    padding-right: 5px;
+    object-fit: cover;
+    display: inline-block;
+}
+.imglist a{
+    padding: 10px 5px 0 0;
+    overflow: hidden;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.imglist.oneimg a{
+    width: auto;
+}
+.imglist a span{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+.post a img,
+.imglist img {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    vertical-align: middle
+}
+.imglist.oneimg img{
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.time {
+    width: auto;
+    color: #b1b1b1;
+    margin-right: 15px;
+    vertical-align: middle;
+    float: left;
+}
+.delself{
+    width: auto;
+    font-size: 14px;
+    color: #576b95;
+    vertical-align: middle;
+    display: inline-block;
+    float: left;
+}
+
+.c-icon {
+    width: 20px;
+    float: right
+}
+
+.cmt-wrap {
+    width: 100%;
+    background-color: #eee
+}
+
+.like {
+    color: #576b95;
+    padding: 5px 5px 3px 12px
+}
+
+.like img {
+    width: 12px;
+    padding-right: 5px
+}
+
+.cmt-list {
+    padding: 5px 12px;
+    color: #454545
+}
+
+.cmt-list p {
+    padding-top: 3px
+}
+
+.cmt-list span {
+    color: #3b5384
+}
+
+#share a {
+    border-radius: 5px;
+    background-color: #26337e;
+    color: #fff;
+    line-height: 2.5;
+    width: 138px;
+    margin: 0 10px
+}
+
+#share a:nth-child(1) {
+    position: absolute;
+    left: 50%;
+    margin-left: -148px
+}
+
+#share a:nth-child(2) {
+    right: 50%;
+    margin-right: -148px
+}
+
+#share p {
+    padding: 45px 0 10px;
+    color: #999
+}
+
+/* 视频 */
+.videobox{
+    width: 100%;
+}
+.videobox .box{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: 500px;
+    max-height: 500px;
+    /* icon-play.png */
+    cursor: pointer;
+}
+.videobox .box:after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url("../img/pyq/icon-play.png") center center no-repeat;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.videobox img{
+    width: 100%;
+    height: 100%;
+    max-width: 500px;
+    max-height: 500px;
+}
+
+/* 赞 */
+.zandp{
+    background-color: #303030;
+    position: absolute;
+    right: 32px;
+    top: 0;
+    border-radius: 5px;
+    display: none;
+}
+.zandp a{
+    color: #fff;
+    font-size: 1rem;
+    height: 30px;
+    line-height: 30px;
+    white-space: nowrap;
+    padding: 0 1rem
+}
+.zandp a i{
+    display: inline-block;
+    vertical-align: middle;
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    margin-top: -2px;
+    position: relative;
+    overflow: hidden;
+}
+.zandp a.zan i::before{
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 200%;
+    background: url("../img/pyq/icon.png") 0 0 no-repeat;
+    background-size: 32px auto;
+    transition: .4s;
+}
+.zandp a.zan.ok i::before{
+    top: -16px;
+}
+.zandp a.pl i::before{
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 200%;
+    background: url("../img/pyq/icon.png") -16px 0 no-repeat;
+    background-size: 32px auto;
+}
+
+/* 评论 */
+.plbox{
+    min-height: 24px;
+    padding: 4px 10px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #dcdcdc;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+    display: none;
+}
+.plbox .enterarea{
+    width: 100%;
+    display:-webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+}
+.plbox .textarea{
+    min-height: 24px;
+    line-height: 24px;
+    position: relative;
+    box-sizing: border-box;
+    outline: none;
+    max-height: 96px;
+    overflow-y: auto;
+    box-flex:1;
+    -webkit-box-flex:1;
+    -moz-box-flex:1;
+    flex:1;
+    -webkit-flex:1;
+    margin-right: .5rem;
+}
+.plbox .textarea:before{
+    content: attr(data-placeholder);
+    display: block;
+    height: 100%;
+    color: #999;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 24px;
+    text-indent: .5em;
+}
+.plbox .textarea img{
+    vertical-align: middle;
+    max-height: 24px;
+}
+.plbox .enterarea .js-face-btn{
+    width: 24px;
+    height: 24px;
+    background: url("../img/pyq/icon-face.svg") center center no-repeat;
+    background-size: 100%;
+    display: block;
+    opacity: .5;
+}
+.plbox .enterarea .send{
+    background-color: #4cae4c;
+    color: #fff;
+    padding: 0 15px;
+    border: 0 none;
+    border-radius: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+    height: 24px;
+    line-height: 24px;
+}
+.plbox .enterarea .send.disabled{
+    background-color: #bfbfbf;
+    color: #e7e4e4;
+
+}
+.plbox .facearea{
+    width: 100%;
+    /* min-height: 24px;
+    display: none; */
+}
+.facearea .expression {
+    display: none;
+}
+.facearea .expression table{
+    width: 100%;
+    margin-top: 10px;
+}
+
+.btn-group-lg>.btn,.btn-lg {
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 6px
+}
+
+.btn-block {
+    display: block;
+    width: 100%
+}
+
+.bq {
+    width: 13px;
+    padding-left: 2px
+}
+
+.hidenone {
+    display: none
+}

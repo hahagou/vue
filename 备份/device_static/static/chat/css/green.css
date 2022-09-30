@@ -1,0 +1,51 @@
+﻿/* iCheck plugin Square skin, green
+----------------------------------- */
+.icheckbox_square-green,
+.iradio_square-green {
+    position: relative;
+    top: -1px;
+    display: inline-block;
+    *display: inline;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    width: 17px;
+    height: 17px;
+    background: url(../images/green.png) no-repeat;
+    border: none;
+    cursor: pointer;
+}
+
+.icheckbox_square-green {
+    background-position: 0 0;
+}
+    .icheckbox_square-green.hover {
+        background-position: -17px 0;
+    }
+    .icheckbox_square-green.checked {
+        background-position: -34px 0;
+    }
+    .icheckbox_square-green.disabled {
+        background-position: -51px 0;
+        cursor: default;
+    }
+    .icheckbox_square-green.checked.disabled {
+        background-position: -68px 0;
+    }
+
+.iradio_square-green {
+    background-position: -85px 0;
+}
+    .iradio_square-green.hover {
+        background-position: -102px 0;
+    }
+    .iradio_square-green.checked {
+        background-position: -119px 0;
+    }
+    .iradio_square-green.disabled {
+        background-position: -136px 0;
+        cursor: default;
+    }
+    .iradio_square-green.checked.disabled {
+        background-position: -153px 0;
+    }
